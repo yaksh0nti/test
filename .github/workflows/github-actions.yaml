@@ -28,7 +28,7 @@ jobs:
         uses: tj-actions/changed-files@v44
         with:
           files: |
-            **.py
+            *.py
 
       - name: List all changed files
         env:
