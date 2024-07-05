@@ -2,8 +2,6 @@ name: CI
 
 on:
   pull_request:
-    paths:
-      - 'backend/**'
     branches:
       - main
 
@@ -27,8 +25,7 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v44
         with:
-          files: |
-            *.py
+          files: backend/**/*.py
 
       - name: List all changed files
         env:
