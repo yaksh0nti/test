@@ -29,7 +29,8 @@ jobs:
         uses: tj-actions/changed-files@v44
         with:
           dir_names_exclude_current_dir: true
-          files: backend/**/*.py
+          files: |
+            *.py
 
       - name: List all changed files
         env:
